@@ -6,19 +6,24 @@ public class LargestPalindrome {
 
 	public static void main(String[] args) 
 	{
-		long prod,max=0;
-		for(int i=500;i<1000;i++)
+		long prod;
+		boolean check=false;
+		for(int i=999;i>=800;i--)
 		{
-			for(int j=500;j<1000;j++)
+			for(int j=999;j>=800;j--)
 			{
 				prod=i*j;
-				if(isPalindrome(prod)&&prod>max)
+				if(isPalindrome(prod))
 				{
-						max=prod;
+						System.out.println(prod);
+						System.out.println(i+" "+j);
+						check=true;
+						break;
 				}	
 			}
+			if(check==true)
+				break;
 		}
-		System.out.print(max);
 	}
 	public static boolean isPalindrome(long n)
 	{

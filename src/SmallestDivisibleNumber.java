@@ -14,5 +14,4 @@ public class SmallestDivisibleNumber
 		}
 		System.out.println(i);
 	}
-
 }
