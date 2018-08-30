@@ -7,9 +7,9 @@ public class LargestPalindrome {
 	public static void main(String[] args) 
 	{
 		long prod,max=0;
-		for(int i=100;i<1000;i++)
+		for(int i=500;i<1000;i++)
 		{
-			for(int j=100;j<1000;j++)
+			for(int j=500;j<1000;j++)
 			{
 				prod=i*j;
 				if(isPalindrome(prod)&&prod>max)
